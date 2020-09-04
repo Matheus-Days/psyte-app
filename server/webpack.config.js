@@ -23,7 +23,9 @@ module.exports = {
     filename: "server.js",
   },
   plugins: [
-    new NodemonPlugin(),
+    new NodemonPlugin({
+      nodeArgs: ["-r", "dotenv/config"],
+    }),
     new webpack.optimize.LimitChunkCountPlugin({
       maxChunks: 1,
     }),

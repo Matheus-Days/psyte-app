@@ -14,11 +14,19 @@ const server = http.createServer(app);
 const io = socket(server);
 const PORT = process.env.PORT || 3000;
 
+app.use((req, res, next) => {
+  if ((req.headers["x-forwarded-proto"] || "").endsWith("http"))
+    res.redirect(`https://${req.headers.host}${req.url}`);
+  else next();
+});
 app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 app.use(cookieParser());
+app.use("/server.js", (req, res) => {
+  res.status(404).send();
+});
 
 consign()
   .include("./server/config/passport.js")

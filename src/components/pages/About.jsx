@@ -91,14 +91,14 @@ export default () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography component="p">
-            A primeira sessão tem o valor fixo de R$50,00 a ser pago ao fim do
-            atentimento. Antes do final desta sessão inicial negociamos o valor
-            a ser pago ao final de cada sessão seguinte.
+            As sessões tem o valor fixo de R$70,00 e podem ser pagas ao fim de
+            cada atentimento ou de forma antecipada para todas sessões daquele
+            mês com desconto de 10%.
             <br />
             Caso a pessoa seja atendida virtualmente, as opções de pagamento
-            são: cartão de débito ou de crédito, ou transferência para conta
-            Caixa ou conta Nubank. Caso o atendimento seja presencial, também há
-            a opção de pagamento em espécie.
+            são: cartão de débito ou de crédito (com acréscimo das taxas); e
+            transferência para conta Caixa ou conta Nubank. Caso o atendimento
+            seja presencial, também há a opção de pagamento em espécie.
           </Typography>
         </AccordionDetails>
       </Accordion>

@@ -306,6 +306,7 @@ const VideoChat = ({ open }) => {
         />
       ) : (
         <VideoStreamer
+          muted
           reference={userVideo}
           controlMic={micToggle}
           controlCam={vidToggle}
