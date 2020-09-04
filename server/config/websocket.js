@@ -1,5 +1,5 @@
 const jwt = require("jwt-simple");
-const { authSecret } = require("../.env");
+const { authSecret } = JSON.parse(process.env.authSecret);
 
 const isValid = (token, app) => {
   try {

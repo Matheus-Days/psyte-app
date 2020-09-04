@@ -1,8 +1,7 @@
 const { google } = require("googleapis");
 const { OAuth2 } = google.auth;
-const { calAuth } = require("../.env");
 const moment = require("moment");
-const base32 = require("base32");
+const calAuth = JSON.parse(process.env.calAuth);
 
 const oAuth2Client = new OAuth2(calAuth.ID, calAuth.secret);
 

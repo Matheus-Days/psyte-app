@@ -1,7 +1,7 @@
 const bcrypt = require("bcrypt");
 const moment = require("moment");
 const jwt = require("jwt-simple");
-const { authSecret } = require("../.env");
+const { authSecret } = JSON.parse(process.env.authSecret);
 
 const isNotExpired = (userData) => {
   try {

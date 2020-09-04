@@ -1,4 +1,4 @@
-const { db } = require("./.env");
+const db = JSON.parse(process.env.db);
 
 module.exports = {
   client: "mysql",

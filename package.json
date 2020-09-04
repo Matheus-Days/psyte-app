@@ -66,7 +66,7 @@
     ]
   },
   "devDependencies": {
-    "dotenv": "^8.2.0",
+    "dotenv": "8.2.0",
     "dotenv-webpack": "2.0.0",
     "ignore-loader": "0.1.2",
     "nodemon-webpack-plugin": "4.3.2",
